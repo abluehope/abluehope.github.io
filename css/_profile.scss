@@ -1,6 +1,7 @@
 .profile {
   position: relative;
   background: #ffd364;
+  // background: linear-gradient(to bottom,  #ffd364 0%,#e8ed92 100%);
 
   .content_wrap {
     display: flex;
@@ -61,6 +62,11 @@
     }
 
     .right {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      width: 400px;
+
       strong {
         position: relative;
         display: block;
@@ -75,27 +81,38 @@
           background: $color-body;
         }
       }
-      dl {
-        display: flex;
-        gap: 24px;
-        dt {
-          position: relative;
-          &::after {
-            content: "";
-            position: absolute;
-            right: -13px;
-            width: 1px;
-            height: 32px;
-            background: $color-gray;
+      .top {
+        dl {
+          display: flex;
+          gap: 24px;
+          dt {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              right: -13px;
+              width: 1px;
+              height: 32px;
+              background: $color-gray;
+            }
+          }
+          dd {
+            span {
+              display: block;
+              font-size: 14px;
+              color: #cb7822;
+              line-height: 1.5;
+            }
           }
         }
-        dd {
-          span {
-            display: block;
-            font-size: 14px;
-            color: #cb7822;
-            line-height: 1.5;
-          }
+      }
+      .bottom {
+        img {
+          width: 50px;
+        }
+        .icon_wrap {
+          display: flex;
+          flex-wrap: wrap;
         }
       }
     }

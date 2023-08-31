@@ -11,7 +11,7 @@
     width: 760px;
     height: 100vh;
     background: $color-white;
-    clip-path: polygon(0 0, 100% 20%, 100% 71%, 0% 100%);
+    clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
 
     transform: translate(-100%, 0);
     opacity: 0;
@@ -59,7 +59,13 @@
       }
       .btn {
         background: #0770bb;
+        border: 1px solid #0770bb;
         color: $color-white;
+      }
+      .s {
+        background: transparent;
+        border: 1px solid #0770bb;
+        color: #0770bb;
       }
     }
   }

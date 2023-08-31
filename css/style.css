@@ -133,6 +133,9 @@ address {
   height: 16px;
   border-radius: 50%;
 }
+.con .txt_box .desc dl .d_desc {
+  line-height: 1.25;
+}
 
 .btn {
   padding: 12px 32px;
@@ -344,8 +347,8 @@ address {
   width: 760px;
   height: 100vh;
   background: #ffffff;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 71%);
-          clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 71%);
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 74%, 0% 90%);
+          clip-path: polygon(0 20%, 100% 0, 100% 74%, 0% 90%);
   transform: translate(100%, 0);
   opacity: 0;
 }
@@ -393,8 +396,8 @@ address {
   width: 760px;
   height: 100vh;
   background: #ffffff;
-  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 71%, 0% 100%);
-          clip-path: polygon(0 0, 100% 20%, 100% 71%, 0% 100%);
+  -webkit-clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
+          clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
   transform: translate(-100%, 0);
   opacity: 0;
 }
@@ -429,7 +432,13 @@ address {
 }
 .main_inha .con .txt_box .btn {
   background: #0770bb;
+  border: 1px solid #0770bb;
   color: #ffffff;
+}
+.main_inha .con .txt_box .s {
+  background: transparent;
+  border: 1px solid #0770bb;
+  color: #0770bb;
 }
 
 .main_nunkkoch {
@@ -444,8 +453,8 @@ address {
   width: 760px;
   height: 100vh;
   background: #ffffff;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 71%);
-          clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 71%);
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 74%, 0% 90%);
+          clip-path: polygon(0 20%, 100% 0, 100% 74%, 0% 90%);
   transform: translate(100%, 0);
   opacity: 0;
 }
@@ -493,8 +502,8 @@ address {
   width: 760px;
   height: 100vh;
   background: #ffffff;
-  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 71%, 0% 100%);
-          clip-path: polygon(0 0, 100% 20%, 100% 71%, 0% 100%);
+  -webkit-clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
+          clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
   transform: translate(-100%, 0);
   opacity: 0;
 }
@@ -543,8 +552,8 @@ address {
   width: 760px;
   height: 100vh;
   background: #ffffff;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 71%);
-          clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 71%);
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 74%, 0% 90%);
+          clip-path: polygon(0 20%, 100% 0, 100% 74%, 0% 90%);
   transform: translate(100%, 0);
   opacity: 0;
 }
@@ -673,6 +682,12 @@ address {
   height: 10px;
   background: #777777;
 }
+.profile .content_wrap .right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 400px;
+}
 .profile .content_wrap .right strong {
   position: relative;
   display: block;
@@ -687,14 +702,14 @@ address {
   height: 2px;
   background: #222222;
 }
-.profile .content_wrap .right dl {
+.profile .content_wrap .right .top dl {
   display: flex;
   gap: 24px;
 }
-.profile .content_wrap .right dl dt {
+.profile .content_wrap .right .top dl dt {
   position: relative;
 }
-.profile .content_wrap .right dl dt::after {
+.profile .content_wrap .right .top dl dt::after {
   content: "";
   position: absolute;
   right: -13px;
@@ -702,9 +717,16 @@ address {
   height: 32px;
   background: #777777;
 }
-.profile .content_wrap .right dl dd span {
+.profile .content_wrap .right .top dl dd span {
   display: block;
   font-size: 14px;
   color: #cb7822;
   line-height: 1.5;
+}
+.profile .content_wrap .right .bottom img {
+  width: 50px;
+}
+.profile .content_wrap .right .bottom .icon_wrap {
+  display: flex;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
