@@ -1,0 +1,103 @@
+.profile {
+  position: relative;
+  background: #ffd364;
+
+  .content_wrap {
+    display: flex;
+    gap: 120px;
+
+    .left {
+      .img_box {
+        margin: 0 0 24px 0;
+      }
+      dl {
+        display: flex;
+        margin: 0 0 16px 0;
+        dt {
+          font-weight: 600;
+          width: 88px;
+        }
+      }
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 400px;
+      strong {
+        position: relative;
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        &::after {
+          content: "";
+          display: block;
+          margin: 8px 0 16px 0;
+          width: 80px;
+          height: 2px;
+          background: $color-body;
+        }
+      }
+      ul {
+        li {
+          margin: 0 0 16px 0;
+          line-height: 1.25;
+          span {
+            position: relative;
+            font-size: 14px;
+            color: #cb7822;
+            &::before {
+              content: "";
+              margin: 0 7px 0 4px;
+              display: inline-block;
+              width: 1px;
+              height: 10px;
+              background: $color-gray;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      strong {
+        position: relative;
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        &::after {
+          content: "";
+          display: block;
+          margin: 8px 0 16px 0;
+          width: 80px;
+          height: 2px;
+          background: $color-body;
+        }
+      }
+      dl {
+        display: flex;
+        gap: 24px;
+        dt {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            right: -13px;
+            width: 1px;
+            height: 32px;
+            background: $color-gray;
+          }
+        }
+        dd {
+          span {
+            display: block;
+            font-size: 14px;
+            color: #cb7822;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}

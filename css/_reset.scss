@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+p {
+  word-break: keep-all;
+}
+
+body {
+  line-height: 1;
+  color: $color-body;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  letter-spacing: -0.025em;
+  word-break: keep-all;
+  font-size: 16px;
+
+  @include res() {
+    min-width: 320px;
+  }
+}
+
+em,
+address {
+  font-style: normal;
+}
+
+.inner {
+  @include inner();
+}
+
+.con {
+  position: relative;
+  margin: 0 auto;
+  @include flex();
+
+  .img_box {
+    transform: translateY(-40px);
+    figure {
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba($color: $color-body, $alpha: 0.4);
+    }
+    .pc {
+      width: 1000px;
+    }
+    .mobile_l {
+      position: absolute;
+      bottom: -100px;
+      left: -50px;
+      width: 250px;
+    }
+    .mobile_r {
+      position: absolute;
+      bottom: -100px;
+      right: -50px;
+      width: 250px;
+    }
+  }
+
+  .txt_box {
+    position: relative;
+    .title {
+      strong {
+        margin: 0 0 8px 0;
+        font-size: 40px;
+        font-weight: 500;
+      }
+      h2 {
+        margin: 0 0 8px 0;
+        font-size: 48px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 14px;
+        color: $color-gray;
+      }
+      &::after {
+        content: "";
+        margin: 32px 0;
+        display: block;
+        width: 80px;
+        height: 1px;
+        background: $color-border;
+      }
+    }
+    .desc {
+      dl {
+        display: flex;
+        margin: 0 0 16px 0;
+        dt {
+          font-weight: 600;
+          width: 80px;
+        }
+        dd {
+          width: 250px;
+          ul {
+            display: flex;
+            gap: 8px;
+            li {
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 12px 32px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}

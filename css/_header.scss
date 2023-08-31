@@ -1,0 +1,66 @@
+.header {
+  position: fixed;
+  top: 50px;
+  left: 2%;
+
+  z-index: 999;
+  h1 {
+    a {
+      font-weight: 500;
+      color: $color-white;
+      transition: 0.2s;
+    }
+    &.cb {
+      a {
+        color: $color-body;
+      }
+    }
+  }
+  .gnb {
+    position: fixed;
+    inset: 50% 80px auto auto;
+    transform: translate(0, -50%);
+
+    li {
+      a {
+        position: relative;
+        display: block;
+        width: 80px;
+        height: 24px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 30%;
+          right: -30%;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          transform: translate(0, -50%);
+          background: rgba($color: $color-body, $alpha: 0.5);
+          transition: width 0.5s;
+        }
+
+        span {
+          display: block;
+          // font-size: 14px;
+          font-size: 0;
+          text-align: right;
+
+          opacity: 0;
+        }
+      }
+      &.on {
+        a {
+          &::after {
+            background: $color-body;
+          }
+        }
+        span {
+          opacity: 1;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.bg {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 1;
+  img {
+    filter: brightness(0) invert(1);
+    width: 200px;
+    opacity: 0.35;
+    animation: up 25s linear infinite;
+  }
+
+  .bg_01 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  .bg_02 {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+  }
+
+  .bg_03 {
+    position: absolute;
+    bottom: 10%;
+    left: -20%;
+  }
+}
+
+@keyframes up {
+  100% {
+    transform: translateX(3000px);
+  }
+}

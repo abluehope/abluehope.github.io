@@ -1,0 +1,64 @@
+.main_beakhwawon {
+  position: relative;
+  background: linear-gradient(to bottom, #f4896b 0%, #f9a856 100%);
+
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 760px;
+    height: 100vh;
+    background: $color-white;
+    clip-path: polygon(0 0, 100% 20%, 100% 71%, 0% 100%);
+
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  &.on {
+    &::before {
+      transform: translate(0, 0);
+      transition: 0.5s;
+      opacity: 1;
+    }
+
+    .con {
+      .txt_box {
+        transform: translate(0, 0);
+        transition: 0.5s 0.3s;
+        opacity: 1;
+      }
+    }
+  }
+  .con {
+    .img_box {
+      order: 2;
+    }
+    .txt_box {
+      transform: translate(0, 80px);
+      opacity: 0;
+      .desc {
+        margin: 0 0 80px 0;
+        dl {
+          dd {
+            ul {
+              .m_color {
+                background: #f4adad;
+              }
+              .s_color {
+                background: #b23939;
+              }
+              .b_color {
+                background: $color-body;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        background: #f4adad;
+      }
+    }
+  }
+}

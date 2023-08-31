@@ -1,0 +1,59 @@
+.main_intro {
+  position: relative;
+  background: linear-gradient(to bottom, #5b2c83 0%, #d1628b 100%);
+  .inner {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(0, -50%);
+    z-index: 999;
+
+    color: $color-white;
+
+    span {
+      padding: 0 0 0 3px;
+      display: block;
+      margin: 0 0 40px 0;
+      font-size: 40px;
+      font-weight: 100;
+    }
+
+    .txt_wrap {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      .title {
+        h2 {
+          font-size: 112px;
+          font-weight: 700;
+          text-shadow: 0 0 8px rgba($color: $color-white, $alpha: 0.5);
+        }
+        strong {
+          display: block;
+          font-size: 112px;
+          font-weight: 300;
+          text-shadow: 0 0 8px rgba($color: $color-white, $alpha: 0.5);
+        }
+      }
+
+      .desc {
+        position: relative;
+        p {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 22px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -6%;
+            transform: translate(-50%, -50%);
+            width: 1px;
+            height: 80px;
+            background: $color-white;
+          }
+        }
+      }
+    }
+  }
+}

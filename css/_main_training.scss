@@ -1,0 +1,49 @@
+.main_training {
+  background: linear-gradient(to bottom, #f9a856 0%, #ffd364 100%);
+
+  &.on {
+    .content_wrap {
+      transform: translateY(0);
+      transition: 0.5s;
+      opacity: 1;
+    }
+  }
+  .content_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $size-gap;
+
+    transform: translateY(50px);
+    opacity: 0;
+
+    .container {
+      &:hover {
+        .img_box {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .img_box {
+        margin: 0 0 16px 0;
+        overflow: hidden;
+        img {
+          transition: 0.5s;
+        }
+      }
+      .desc_box {
+        strong {
+          margin: 0 0 8px 0;
+          display: block;
+          font-size: 24px;
+          font-weight: 600;
+          text-align: center;
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
