@@ -110,6 +110,15 @@ $(function () {
     retina_detect: true,
   });
 
+  $(".menu_btn").on("click", function () {
+    $(this).toggleClass("on");
+    $(".cover").toggleClass("on");
+  });
+
+  $(".cover").on("wheel", function (e) {
+    e.stopPropagation();
+  });
+
   const option = {
     anchors: [
       "intro",
@@ -132,7 +141,9 @@ $(function () {
         .addClass("on")
         .siblings()
         .removeClass("on");
-      if (idx == 3 || idx == 5) {
+      if (idx == 3 || idx == 5 || idx == 8) {
+        $("h1").addClass("cb");
+      } else if (idx == 6 || idx == 7) {
         $("h1").addClass("cb");
         $(".scroll_down").addClass("cb");
       } else {

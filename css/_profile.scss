@@ -4,12 +4,21 @@
   // background: linear-gradient(to bottom,  #ffd364 0%,#e8ed92 100%);
 
   .content_wrap {
+    padding: 72px 0 56px 0;
     display: flex;
+    justify-content: center;
     gap: 120px;
+
+    background: rgba($color: $color-white, $alpha: 0.5);
+    border: 1px solid $color-white;
+    border-radius: 16px;
 
     .left {
       .img_box {
         margin: 0 0 24px 0;
+        img {
+          width: 300px;
+        }
       }
       dl {
         display: flex;
@@ -47,7 +56,7 @@
           span {
             position: relative;
             font-size: 14px;
-            color: #cb7822;
+            color: #c96b06;
             &::before {
               content: "";
               margin: 0 7px 0 4px;
@@ -65,7 +74,6 @@
       display: flex;
       flex-direction: column;
       gap: 80px;
-      width: 400px;
 
       strong {
         position: relative;
@@ -100,19 +108,32 @@
             span {
               display: block;
               font-size: 14px;
-              color: #cb7822;
+              color: #c96b06;
               line-height: 1.5;
             }
           }
         }
       }
       .bottom {
-        img {
-          width: 50px;
-        }
         .icon_wrap {
           display: flex;
-          flex-wrap: wrap;
+          align-items: center;
+          gap: 16px;
+          .html_icon {
+            width: 40px;
+          }
+          .css_icon {
+            width: 30px;
+          }
+          .js_icon {
+            width: 40px;
+          }
+          .php_icon {
+            width: 56px;
+          }
+          .mysql_icon {
+            width: 56px;
+          }
         }
       }
     }
