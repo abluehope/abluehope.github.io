@@ -1,4 +1,5 @@
 .main_training {
+  padding: 80px 0;
   background: linear-gradient(to bottom, #f9a856 0%, #ffd364 100%);
 
   &.on {
@@ -8,9 +9,18 @@
       opacity: 1;
     }
   }
+  .title {
+    margin: 0 0 24px 0;
+    strong {
+      display: block;
+      font-size: 64px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
   .content_wrap {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: $size-gap;
 
     transform: translateY(50px);
@@ -24,22 +34,11 @@
           }
         }
       }
-      .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        strong {
-          font-size: 64px;
-          font-weight: 700;
-        }
-      }
       .img_box {
         margin: 0 0 24px 0;
         border-radius: 16px;
         overflow: hidden;
         img {
-          
           transition: 0.5s;
         }
       }

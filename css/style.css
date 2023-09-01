@@ -608,6 +608,7 @@ address {
 }
 
 .main_training {
+  padding: 80px 0;
   background: linear-gradient(to bottom, #f9a856 0%, #ffd364 100%);
 }
 .main_training.on .content_wrap {
@@ -615,25 +616,24 @@ address {
   transition: 0.5s;
   opacity: 1;
 }
+.main_training .title {
+  margin: 0 0 24px 0;
+}
+.main_training .title strong {
+  display: block;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
 .main_training .content_wrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   transform: translateY(50px);
   opacity: 0;
 }
 .main_training .content_wrap .container:hover .img_box img {
   transform: scale(1.1);
-}
-.main_training .content_wrap .container .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.main_training .content_wrap .container .title strong {
-  font-size: 64px;
-  font-weight: 700;
 }
 .main_training .content_wrap .container .img_box {
   margin: 0 0 24px 0;
