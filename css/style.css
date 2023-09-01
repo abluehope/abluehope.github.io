@@ -775,6 +775,9 @@ address {
 .profile .content_wrap .right .bottom .icon_wrap .css_icon {
   width: 42px;
 }
+.profile .content_wrap .right .bottom .icon_wrap .scss_icon {
+  width: 55px;
+}
 .profile .content_wrap .right .bottom .icon_wrap .js_icon {
   width: 55px;
 }
