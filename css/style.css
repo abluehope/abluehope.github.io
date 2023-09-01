@@ -608,16 +608,15 @@ address {
 }
 
 .main_training {
-  padding: 80px 0;
   background: linear-gradient(to bottom, #f9a856 0%, #ffd364 100%);
 }
-.main_training.on .content_wrap {
+.main_training.on .container_wrap {
   transform: translateY(0);
   transition: 0.5s;
   opacity: 1;
 }
 .main_training .title {
-  margin: 0 0 24px 0;
+  margin: 0 0 48px 0;
 }
 .main_training .title strong {
   display: block;
@@ -625,32 +624,37 @@ address {
   font-weight: 700;
   text-align: center;
 }
-.main_training .content_wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.main_training .container_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   transform: translateY(50px);
   opacity: 0;
 }
-.main_training .content_wrap .container:hover .img_box img {
+.main_training .container_wrap .container {
+  width: 40%;
+}
+.main_training .container_wrap .container:hover .img_box img {
   transform: scale(1.1);
 }
-.main_training .content_wrap .container .img_box {
-  margin: 0 0 24px 0;
+.main_training .container_wrap .container .img_box {
+  margin: 0 auto 24px auto;
+  width: 80%;
   border-radius: 16px;
   overflow: hidden;
 }
-.main_training .content_wrap .container .img_box img {
+.main_training .container_wrap .container .img_box img {
   transition: 0.5s;
 }
-.main_training .content_wrap .container .desc_box strong {
+.main_training .container_wrap .container .desc_box strong {
   margin: 0 0 8px 0;
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
 }
-.main_training .content_wrap .container .desc_box span {
+.main_training .container_wrap .container .desc_box span {
   display: block;
   text-align: center;
 }
@@ -759,25 +763,29 @@ address {
   color: #c96b06;
   line-height: 1.5;
 }
-.profile .content_wrap .right .bottom .icon_wrap {
+.profile .content_wrap .right .bottom .icon_wrap .container {
+  margin: 0 0 16px 0;
   display: flex;
-  align-items: center;
   gap: 16px;
+  align-items: center;
 }
 .profile .content_wrap .right .bottom .icon_wrap .html_icon {
-  width: 40px;
+  width: 58px;
 }
 .profile .content_wrap .right .bottom .icon_wrap .css_icon {
-  width: 30px;
+  width: 42px;
 }
 .profile .content_wrap .right .bottom .icon_wrap .js_icon {
-  width: 40px;
+  width: 55px;
+}
+.profile .content_wrap .right .bottom .icon_wrap .jquery_icon {
+  width: 120px;
 }
 .profile .content_wrap .right .bottom .icon_wrap .php_icon {
-  width: 56px;
+  width: 80px;
 }
 .profile .content_wrap .right .bottom .icon_wrap .mysql_icon {
-  width: 56px;
+  width: 90px;
 }
 
 .cover {

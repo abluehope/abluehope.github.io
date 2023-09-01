@@ -116,23 +116,34 @@
       }
       .bottom {
         .icon_wrap {
-          display: flex;
-          align-items: center;
-          gap: 16px;
+          // display: grid;
+          // grid-template-columns: repeat(3, 1fr);
+          // align-items: center;
+          // gap: 16px;
+
+          .container {
+            margin: 0 0 16px 0;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+          }
           .html_icon {
-            width: 40px;
+            width: 58px;
           }
           .css_icon {
-            width: 30px;
+            width: 42px;
           }
           .js_icon {
-            width: 40px;
+            width: 55px;
+          }
+          .jquery_icon {
+            width: 120px;
           }
           .php_icon {
-            width: 56px;
+            width: 80px;
           }
           .mysql_icon {
-            width: 56px;
+            width: 90px;
           }
         }
       }
