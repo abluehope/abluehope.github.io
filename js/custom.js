@@ -2,7 +2,8 @@ $(function () {
   particlesJS("intro", {
     particles: {
       number: {
-        value: 80,
+        // value: 80,
+        value: 50,
         density: {
           enable: true,
           value_area: 800,
@@ -55,7 +56,7 @@ $(function () {
       },
       move: {
         enable: true,
-        speed: 6,
+        speed: 3,
         direction: "none",
         random: false,
         straight: false,
