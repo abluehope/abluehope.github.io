@@ -4,10 +4,10 @@
   // background: linear-gradient(to bottom,  #ffd364 0%,#e8ed92 100%);
 
   .content_wrap {
-    padding: 72px 0 56px 0;
+    padding: 72px 16px 56px 80px;
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 64px;
 
     background: rgba($color: $color-white, $alpha: 0.5);
     border: 1px solid $color-white;
@@ -92,35 +92,38 @@
       .top {
         dl {
           display: flex;
-          gap: 24px;
           dt {
             position: relative;
             &::after {
               content: "";
               position: absolute;
-              right: -13px;
+              top: 1px;
+              right: 15px;
               width: 1px;
-              height: 32px;
+              height: 205px;
               background: $color-gray;
             }
           }
           dd {
+            ul {
+              li {
+                margin: 0 0 16px 0;
+                display: flex;
+                flex-direction: column;
+              }
+            }
             span {
-              display: block;
               font-size: 14px;
-              color: #c96b06;
               line-height: 1.5;
+            }
+            .date {
+              color: #c96b06;
             }
           }
         }
       }
       .bottom {
         .icon_wrap {
-          // display: grid;
-          // grid-template-columns: repeat(3, 1fr);
-          // align-items: center;
-          // gap: 16px;
-
           .container {
             margin: 0 0 16px 0;
             display: flex;
