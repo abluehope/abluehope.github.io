@@ -4,12 +4,6 @@
   padding: 0 $size-gap/2;
 }
 
-@mixin flex() {
-  display: flex;
-  gap: 160px;
-  justify-content: center;
-}
-
 @mixin res() {
   @media (max-width: 768px) {
     @content;

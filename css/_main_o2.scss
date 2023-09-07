@@ -11,7 +11,7 @@
     width: 760px;
     height: 100vh;
     background: $color-white;
-    clip-path: polygon(0 20%, 100% 0, 100% 74%, 0% 90%);
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 72%);
 
     transform: translate(100%, 0);
     opacity: 0;
@@ -37,7 +37,6 @@
       opacity: 0;
 
       .desc {
-        margin: 0 0 80px 0;
         dl {
           dd {
             ul {

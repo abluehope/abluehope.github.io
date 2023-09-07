@@ -73,7 +73,7 @@
     .right {
       display: flex;
       flex-direction: column;
-      gap: 80px;
+      justify-content: space-between;
 
       strong {
         position: relative;

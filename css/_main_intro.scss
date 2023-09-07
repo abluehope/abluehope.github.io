@@ -1,14 +1,17 @@
 .main_intro {
   position: relative;
   background: linear-gradient(to bottom, #5b2c83 0%, #d1628b 100%);
-  .inner {
+
+  .inner_wrap {
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate(0, -50%);
     z-index: 999;
 
-    color: $color-white;
+    @include res() {
+      left: 0;
+    }
 
     span {
       padding: 0 0 0 3px;
@@ -16,28 +19,37 @@
       margin: 0 0 40px 0;
       font-size: 40px;
       font-weight: 100;
+      color: $color-white;
+
+      @include res() {
+        padding: 0;
+        margin: 0 0 16px 0;
+        font-size: 24px;
+        text-align: center;
+      }
     }
 
-    .txt_wrap {
+    .txt_box {
       display: flex;
       gap: 80px;
       align-items: center;
-      .title {
-        h2 {
-          font-size: 112px;
-          font-weight: 700;
-          text-shadow: 0 0 8px rgba($color: $color-white, $alpha: 0.5);
-        }
+
+      h2 {
+        font-size: 112px;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 0 0 8px rgba($color: $color-white, $alpha: 0.5);
+
+        color: $color-white;
         strong {
           display: block;
-          font-size: 112px;
           font-weight: 300;
-          text-shadow: 0 0 8px rgba($color: $color-white, $alpha: 0.5);
         }
       }
-
       .desc {
         position: relative;
+        color: $color-white;
+
         p {
           font-size: 18px;
           font-weight: 300;
@@ -46,11 +58,37 @@
             content: "";
             position: absolute;
             top: 50%;
-            left: -6%;
+            left: -7%;
             transform: translate(-50%, -50%);
             width: 1px;
             height: 80px;
             background: $color-white;
+          }
+        }
+      }
+      @include res() {
+        flex-direction: column;
+        h2 {
+          font-size: 64px;
+          text-align: center;
+        }
+        .desc {
+          p {
+            padding: 0 16px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: -65%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 1px;
+              height: 48px;
+              background: $color-white;
+            }
           }
         }
       }

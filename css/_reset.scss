@@ -62,7 +62,9 @@ address {
 .con {
   position: relative;
   margin: 0 auto;
-  @include flex();
+  display: flex;
+  gap: 160px;
+  justify-content: center;
 
   .img_box {
     transform: translateY(-40px);
@@ -91,15 +93,16 @@ address {
   .txt_box {
     position: relative;
     .title {
-      strong {
-        margin: 0 0 8px 0;
-        font-size: 40px;
-        font-weight: 500;
-      }
       h2 {
         margin: 0 0 8px 0;
         font-size: 48px;
         font-weight: 700;
+        strong {
+          display: block;
+          margin: 0 0 4px 0;
+          font-size: 40px;
+          font-weight: 500;
+        }
       }
       span {
         font-size: 14px;
@@ -115,6 +118,7 @@ address {
       }
     }
     .desc {
+      margin: 0 0 32px 0;
       dl {
         display: flex;
         margin: 0 0 16px 0;
@@ -123,7 +127,7 @@ address {
           width: 80px;
         }
         dd {
-          width: 250px;
+          width: 300px;
           ul {
             display: flex;
             gap: 8px;
@@ -140,9 +144,58 @@ address {
       }
     }
   }
+
+  @include res() {
+    padding: 80px 16px;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    .img_box {
+      transform: translateY(0);
+      .pc {
+        width: auto;
+      }
+      .mobile_l,
+      .mobile_r {
+        display: none;
+      }
+    }
+
+    .txt_box {
+      .title {
+        h2 {
+          margin: 0 0 8px 0;
+          font-size: 32px;
+          font-weight: 700;
+          strong {
+            display: inline-block;
+            margin: 0 8px 0 0;
+            font-size: 32px;
+            font-weight: 500;
+          }
+        }
+        &::after {
+          margin: 16px 0;
+        }
+      }
+
+      .desc {
+        dl {
+          margin: 0 0 14px 0;
+          dd {
+            width: 100%;
+          }
+          .d_desc {
+            line-height: 1.25;
+          }
+        }
+      }
+    }
+  }
 }
 
 .btn {
+  display: inline-block;
   padding: 12px 32px;
   background: transparent;
   font-size: 14px;

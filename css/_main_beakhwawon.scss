@@ -39,7 +39,6 @@
       transform: translate(0, 80px);
       opacity: 0;
       .desc {
-        margin: 0 0 80px 0;
         dl {
           dd {
             ul {
@@ -58,6 +57,12 @@
       }
       .btn {
         background: #f4adad;
+        border: 1px solid #f4adad;
+      }
+      .s {
+        background: transparent;
+        border: 1px solid #f4adad;
+        color: #f4adad;
       }
     }
   }

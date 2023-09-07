@@ -3,7 +3,7 @@ $(function () {
     particles: {
       number: {
         // value: 80,
-        value: 50,
+        value: 60,
         density: {
           enable: true,
           value_area: 800,
@@ -116,6 +116,23 @@ $(function () {
     $(".cover").toggleClass("on");
   });
 
+  // $(".cover>ul a").forEach((lnk, idx) => {
+  //   lnk.on("click", () => {
+  //     $(".menu_btn").removeClass("on");
+  //     $(".cover").removeClass("on");
+  //   });
+  // });
+  const COVER_A = document.querySelectorAll(".cover>ul a");
+  const COVER_BTN = document.querySelector(".menu_btn");
+  const COVER = document.querySelector(".cover");
+
+  COVER_A.forEach((lnk, idx) => {
+    lnk.addEventListener("click", () => {
+      COVER.classList.remove("on");
+      COVER_BTN.classList.remove("on");
+    });
+  });
+
   $(".cover").on("wheel", function (e) {
     e.stopPropagation();
   });
@@ -142,6 +159,19 @@ $(function () {
         .addClass("on")
         .siblings()
         .removeClass("on");
+      if (idx == 1) {
+        $(".menu_btn").addClass("wh");
+      } else {
+        $(".menu_btn").removeClass("wh");
+
+        $(".menu_btn").on("click", function () {
+          if ($(".cover").hasClass("on")) {
+            $(".menu_btn").addClass("wh");
+          } else {
+            $(".menu_btn").removeClass("wh");
+          }
+        });
+      }
       if (idx == 3 || idx == 5 || idx == 8) {
         $("h1").addClass("cb");
       } else if (idx == 6 || idx == 7) {
@@ -163,12 +193,6 @@ $(function () {
         .addClass("on")
         .siblings()
         .removeClass("on");
-
-      if (dir == "up") {
-        $(".header").addClass("on");
-      } else {
-        $(".header").removeClass("on");
-      }
     },
   };
   $(".main_full").fullpage(option);
