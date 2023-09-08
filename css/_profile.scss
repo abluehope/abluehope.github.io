@@ -3,15 +3,32 @@
   background: #ffd364;
   // background: linear-gradient(to bottom,  #ffd364 0%,#e8ed92 100%);
 
+  @include res() {
+    padding: 0 15px;
+  }
+
+  .inner {
+    background: rgba($color: $color-white, $alpha: 0.5);
+    border: 1px solid $color-white;
+    border-radius: 16px;
+
+    @include res() {
+      padding: 24px;
+      height: 530px;
+      overflow-y: auto;
+    }
+  }
   .content_wrap {
     padding: 72px 16px 56px 80px;
     display: flex;
     justify-content: center;
     gap: 64px;
 
-    background: rgba($color: $color-white, $alpha: 0.5);
-    border: 1px solid $color-white;
-    border-radius: 16px;
+    @include res() {
+      padding: 0;
+      flex-direction: column;
+      gap: $size-gap;
+    }
 
     .left {
       .img_box {
@@ -25,7 +42,12 @@
         margin: 0 0 16px 0;
         dt {
           font-weight: 600;
-          width: 88px;
+          width: 72px;
+        }
+      }
+      @include res() {
+        .img_box {
+          display: none;
         }
       }
     }
@@ -35,6 +57,11 @@
       flex-direction: column;
       justify-content: space-between;
       width: 400px;
+
+      @include res() {
+        gap: $size-gap;
+        width: auto;
+      }
       strong {
         position: relative;
         display: block;
@@ -75,6 +102,10 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @include res() {
+        gap: $size-gap;
+      }
+
       strong {
         position: relative;
         display: block;
@@ -92,8 +123,15 @@
       .top {
         dl {
           display: flex;
+          @include res() {
+            gap: 8px;
+          }
           dt {
             position: relative;
+
+            @include res() {
+              line-height: 1.25;
+            }
             &::after {
               content: "";
               position: absolute;
@@ -102,6 +140,11 @@
               width: 1px;
               height: 205px;
               background: $color-gray;
+
+              @include res() {
+                right: 5px;
+                height: 220px;
+              }
             }
           }
           dd {

@@ -1,5 +1,5 @@
 $(function () {
-  particlesJS("intro", {
+  particlesJS("bg", {
     particles: {
       number: {
         // value: 80,
@@ -150,6 +150,8 @@ $(function () {
     ],
     css: false,
     scrollOverflow: false,
+    // scrollOverflow: true,
+    normalScrollElements: ".content_wrap",
     afterRender: function () {
       $(".main_full section").eq(0).addClass("on");
     },

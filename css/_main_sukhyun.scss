@@ -17,7 +17,8 @@
     opacity: 0;
 
     @include res() {
-      clip-path: polygon(0 43%, 178% 0, 100% 81%, 0% 110%);
+      // clip-path: polygon(0 43%, 178% 0, 100% 81%, 0% 110%);
+      clip-path: polygon(0 28%, 100% 28%, 100% 92%, 0 92%);
     }
   }
   &.on {
@@ -56,10 +57,6 @@
               }
             }
           }
-        }
-
-        @include res() {
-          margin: 0 0 20px 0;
         }
       }
       .btn {

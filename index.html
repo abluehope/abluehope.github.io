@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery.fullpage.min.js"></script>
+    <!-- <script src="./js/scrolloverflow.min.js"></script> -->
     <script src="./js/particles.min.js"></script>
     <script src="./js/custom.js"></script>
   </head>
@@ -73,7 +74,10 @@
       <span class="material-symbols-outlined"> expand_more </span>
     </div>
     <div class="main_full">
-      <section id="intro" class="section main_intro">
+      <section class="section main_intro">
+        <div id="bg">
+          <span class="blind">파티클 배경</span>
+        </div>
         <div class="inner">
           <div class="inner_wrap">
             <span>Web UI/UX Design Portfolio</span>
@@ -492,139 +496,142 @@
         </div>
       </section>
       <section class="section profile">
-        <div class="content_wrap inner">
-          <div class="left">
-            <div class="img_box">
-              <img src="./images/profile_d.jpg" alt="" />
-            </div>
-            <dl>
-              <dt>NAME</dt>
-              <dd>이송희</dd>
-            </dl>
-            <dl>
-              <dt>BRITHDAY</dt>
-              <dd>1994.03.01</dd>
-            </dl>
-            <dl>
-              <dt>PHONE</dt>
-              <dd>010-4129-9431</dd>
-            </dl>
-            <dl>
-              <dt>E-MAIL</dt>
-              <dd>
-                <a href="mailto:rock_star777@naver.com">
-                  rock_star777&#64;naver.com
-                </a>
-              </dd>
-            </dl>
-          </div>
-          <div class="center">
-            <div class="top">
-              <strong>EDUCATION</strong>
-              <ul>
-                <li>
-                  인제대학교 컴퓨터공학부 졸업
-                  <span>2013.03 ~ 2017.02</span>
-                </li>
-                <li>
-                  일본 IT 전문가 집중양성과정(K-MOVE) 수료
-                  <span>2016.07 ~ 2017.03</span>
-                </li>
-                <li>
-                  부산 그린컴퓨터 아카데미 디지털 디자인 UI/UX 반응형
-                  웹디자인&웹퍼블리셔(디자인&코딩)양성 과정 수료
-                  <span>2023.05 ~ 2023.09</span>
-                </li>
-              </ul>
-            </div>
-            <div class="bottom">
-              <strong>CERTIFICATE</strong>
-              <ul>
-                <li>
-                  일본어능력시험 JLPT N2
-                  <span>2019.12</span>
-                </li>
-                <li>
-                  Adobe Certified Associate
-                  <span>2015.08</span>
-                </li>
-                <li>
-                  ITQ 엑셀
-                  <span>2010.12</span>
-                </li>
-                <li>
-                  워드프로세스 2급
-                  <span>2006.12</span>
-                </li>
-                <li>
-                  문서실무사 4급
-                  <span>2006.08</span>
-                </li>
-                <li>
-                  ITQ 파워포인트
-                  <span>2006.04</span>
-                </li>
-                <li>
-                  ITQ 한글
-                  <span>2006.04</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="right">
-            <div class="top">
-              <strong>WORK EXPERIENCE</strong>
+        <div class="inner">
+          <div class="content_wrap">
+            <div class="left">
+              <div class="img_box">
+                <img src="./images/profile_d.jpg" alt="" />
+              </div>
               <dl>
-                <dt>이넷 주식회사(일본)</dt>
+                <dt>NAME</dt>
+                <dd>이송희</dd>
+              </dl>
+              <dl>
+                <dt>BRITH</dt>
+                <dd>1994.03.01</dd>
+              </dl>
+              <dl>
+                <dt>PHONE</dt>
+                <dd>010-4129-9431</dd>
+              </dl>
+              <dl>
+                <dt>E-MAIL</dt>
                 <dd>
-                  <ul>
-                    <li>
-                      응용 소프트웨어 개발자
-                      <span class="date">2017.10 ~ 2023.03</span>
-                    </li>
-                    <li>
-                      [ERP 패키지 개조 및 시스템 운용 서포트 지원]
-                      <span>
-                        IDE: Microsoft Dynamics AX 2012, Dynamics 365, SAP
-                        S/4HANA
-                      </span>
-                      <span> 언어: x++, ABAP </span>
-                    </li>
-                    <li>
-                      [은행 시스템 기능 추가 개발]
-                      <span> IDE: Eclipse, Visual Studio 2008 </span>
-                      <span> 언어: java, C++ </span>
-                    </li>
-                  </ul>
+                  <a href="mailto:rock_star777@naver.com">
+                    rock_star777&#64;naver.com
+                  </a>
                 </dd>
               </dl>
             </div>
-            <div class="bottom">
-              <strong>SKILLS</strong>
-              <div class="icon_wrap">
-                <div class="container">
-                  <div class="html_icon">
-                    <img src="./images/HTML5_logo.svg" alt="" />
+
+            <div class="center">
+              <div class="top">
+                <strong>EDUCATION</strong>
+                <ul>
+                  <li>
+                    인제대학교 컴퓨터공학부 졸업
+                    <span>2013.03 ~ 2017.02</span>
+                  </li>
+                  <li>
+                    일본 IT 전문가 집중양성과정(K-MOVE) 수료
+                    <span>2016.07 ~ 2017.03</span>
+                  </li>
+                  <li>
+                    부산 그린컴퓨터 아카데미 디지털 디자인 UI/UX 반응형
+                    웹디자인&웹퍼블리셔(디자인&코딩)양성 과정 수료
+                    <span>2023.05 ~ 2023.09</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <strong>CERTIFICATE</strong>
+                <ul>
+                  <li>
+                    일본어능력시험 JLPT N2
+                    <span>2019.12</span>
+                  </li>
+                  <li>
+                    Adobe Certified Associate
+                    <span>2015.08</span>
+                  </li>
+                  <li>
+                    ITQ 엑셀
+                    <span>2010.12</span>
+                  </li>
+                  <li>
+                    워드프로세스 2급
+                    <span>2006.12</span>
+                  </li>
+                  <li>
+                    문서실무사 4급
+                    <span>2006.08</span>
+                  </li>
+                  <li>
+                    ITQ 파워포인트
+                    <span>2006.04</span>
+                  </li>
+                  <li>
+                    ITQ 한글
+                    <span>2006.04</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div class="top">
+                <strong>WORK EXPERIENCE</strong>
+                <dl>
+                  <dt>이넷 주식회사(일본)</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        응용 소프트웨어 개발자
+                        <span class="date">2017.10 ~ 2023.03</span>
+                      </li>
+                      <li>
+                        [ERP 패키지 개조 및 시스템 운용 서포트 지원]
+                        <span>
+                          IDE: Microsoft Dynamics AX 2012, Dynamics 365, SAP
+                          S/4HANA
+                        </span>
+                        <span> 언어: x++, ABAP </span>
+                      </li>
+                      <li>
+                        [은행 시스템 기능 추가 개발]
+                        <span> IDE: Eclipse, Visual Studio 2008 </span>
+                        <span> 언어: java, C++ </span>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <div class="bottom">
+                <strong>SKILLS</strong>
+                <div class="icon_wrap">
+                  <div class="container">
+                    <div class="html_icon">
+                      <img src="./images/HTML5_logo.svg" alt="" />
+                    </div>
+                    <div class="css_icon">
+                      <img src="./images/CSS3_logo.svg" alt="" />
+                    </div>
+                    <div class="scss_icon">
+                      <img src="./images/scss_logo.png" alt="" />
+                    </div>
+                    <div class="js_icon">
+                      <img src="./images/javascript_logo.png" alt="" />
+                    </div>
+                    <div class="jquery_icon">
+                      <img src="./images/JQuery_Logo.png" alt="" />
+                    </div>
                   </div>
-                  <div class="css_icon">
-                    <img src="./images/CSS3_logo.svg" alt="" />
-                  </div>
-                  <div class="scss_icon">
-                    <img src="./images/scss_logo.png" alt="" />
-                  </div>
-                  <div class="js_icon">
-                    <img src="./images/javascript_logo.png" alt="" />
-                  </div>
-                  <div class="jquery_icon">
-                    <img src="./images/JQuery_Logo.png" alt="" />
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="php_icon">
-                    <img src="./images/php_logo.svg" alt="" />
-                  </div>
-                  <div class="mysql_icon">
-                    <img src="./images/mysql_logo.png" alt="" />
+                  <div class="container">
+                    <div class="php_icon">
+                      <img src="./images/php_logo.svg" alt="" />
+                    </div>
+                    <div class="mysql_icon">
+                      <img src="./images/mysql_logo.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -638,11 +645,11 @@
       <ul>
         <li>
           <a href="#intro">
-            <span>#01 INTRO</span>
+            <span>INTRO</span>
           </a>
         </li>
         <li class="pf">
-          <a href="#pf01"><span>#02 PORTFOLIO</span></a>
+          <a href="#pf01"><span>PORTFOLIO</span></a>
           <ul>
             <li>
               <a href="#pf01"><span>숙현한복</span></a>
@@ -663,12 +670,12 @@
         </li>
         <li>
           <a href="#training">
-            <span>#03 TRAINING</span>
+            <span>TRAINING</span>
           </a>
         </li>
         <li>
           <a href="#profile">
-            <span>#04 PROFILE</span>
+            <span>PROFILE</span>
           </a>
         </li>
       </ul>

@@ -142,11 +142,14 @@ address {
           line-height: 1.25;
         }
       }
+      @include res() {
+        margin: 0 0 20px 0;
+      }
     }
   }
 
   @include res() {
-    padding: 80px 16px;
+    padding: 0 15px;
     gap: 30px;
     flex-wrap: wrap;
 

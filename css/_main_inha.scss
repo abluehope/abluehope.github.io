@@ -15,6 +15,11 @@
 
     transform: translate(-100%, 0);
     opacity: 0;
+
+    @include res() {
+      // clip-path: polygon(0 43%, 178% 0, 100% 81%, 0% 110%);
+      clip-path: polygon(0 28%, 100% 28%, 100% 92%, 0 92%);
+    }
   }
   &.on {
     &::before {
@@ -34,6 +39,10 @@
   .con {
     .img_box {
       order: 2;
+
+      @include res() {
+        order: 0;
+      }
     }
     .txt_box {
       transform: translate(0, 80px);
