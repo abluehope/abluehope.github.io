@@ -9,29 +9,28 @@
     }
   }
   .container_wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: $size-gap;
+
     transform: translateY(50px);
     opacity: 0;
 
+    @include res() {
+      grid-template-columns: repeat(2, 1fr);
+    }
     .container {
-      width: 40%;
-      &:hover {
-        .img_box {
-          img {
-            transform: scale(1.1);
-          }
-        }
-      }
+      position: relative;
       .img_box {
         margin: 0 auto 24px auto;
-        width: 80%;
         border-radius: 16px;
         overflow: hidden;
         img {
           transition: 0.5s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
       .desc_box {
@@ -45,6 +44,21 @@
         span {
           display: block;
           text-align: center;
+        }
+      }
+      .desc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h2 {
+          font-size: 72px;
+          font-weight: 700;
+          text-align: center;
+
+          @include res() {
+            font-size: 32px;
+          }
         }
       }
     }
