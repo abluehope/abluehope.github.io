@@ -296,7 +296,7 @@ address {
     height: 40px;
   }
   .header .menu_btn::before, .header .menu_btn::after {
-    inset: 16px 5px auto 5px;
+    inset: 17px 5px auto 5px;
   }
 }
 .header .menu_btn button {
@@ -327,7 +327,7 @@ address {
     inset: 7px 5px auto 5px;
   }
   .header .menu_btn button::after {
-    inset: auto 5px 13px 5px;
+    inset: auto 5px 11px 5px;
   }
 }
 .header .menu_btn.on::before {
@@ -557,11 +557,11 @@ address {
   content: "";
   position: absolute;
   inset: 0 auto auto 0;
-  width: 760px;
+  width: 820px;
   height: 100vh;
   background: #ffffff;
-  -webkit-clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
-          clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
+  -webkit-clip-path: polygon(0 0, 100% 18%, 100% 72%, 0% 100%);
+          clip-path: polygon(0 0, 100% 18%, 100% 72%, 0% 100%);
   transform: translate(-100%, 0);
   opacity: 0;
 }
@@ -622,7 +622,7 @@ address {
   content: "";
   position: absolute;
   inset: auto 0 0 auto;
-  width: 760px;
+  width: 820px;
   height: 100vh;
   background: #ffffff;
   -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 72%);
@@ -680,11 +680,11 @@ address {
   content: "";
   position: absolute;
   inset: 0 auto auto 0;
-  width: 760px;
+  width: 820px;
   height: 100vh;
   background: #ffffff;
-  -webkit-clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
-          clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
+  -webkit-clip-path: polygon(0 0, 100% 18%, 100% 72%, 0% 100%);
+          clip-path: polygon(0 0, 100% 18%, 100% 72%, 0% 100%);
   transform: translate(-100%, 0);
   opacity: 0;
 }
@@ -744,7 +744,7 @@ address {
   content: "";
   position: absolute;
   inset: auto 0 0 auto;
-  width: 760px;
+  width: 820px;
   height: 100vh;
   background: #ffffff;
   -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 72%);

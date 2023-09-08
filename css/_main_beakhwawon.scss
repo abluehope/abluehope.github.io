@@ -8,10 +8,10 @@
     content: "";
     position: absolute;
     inset: 0 auto auto 0;
-    width: 760px;
+    width: 820px;
     height: 100vh;
     background: $color-white;
-    clip-path: polygon(0px 0px, 100% 20%, 100% 92%, 0 70%);
+    clip-path: polygon(0 0, 100% 18%, 100% 72%, 0% 100%);
 
     transform: translate(-100%, 0);
     opacity: 0;
